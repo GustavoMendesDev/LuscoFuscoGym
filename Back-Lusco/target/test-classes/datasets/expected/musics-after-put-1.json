@@ -1,0 +1,11 @@
+{
+  "musica": [
+    {
+      "id": 1,
+      "nome": "Enter Sandman",
+      "artista": "Metallica",
+      "album": "Metallica (Black Album)",
+      "duracao": 331
+    }
+  ]
+}

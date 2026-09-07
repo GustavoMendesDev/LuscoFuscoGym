@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: school.sptech.exercicio_jdbc.MusicaTest
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.35 s -- in school.sptech.exercicio_jdbc.MusicaTest

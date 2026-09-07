@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="school.sptech.exercicio_jdbc.MusicaTest" time="14.354" tests="35" errors="0" skipped="0" failures="32" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/a1234/Downloads/atividade-crud-musicas-jdbc/target/test-classes:/Users/a1234/Downloads/atividade-crud-musicas-jdbc/target/classes:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.0/spring-boot-starter-jdbc-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.0/spring-boot-starter-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.0/spring-boot-starter-logging-4.1.0.jar:/Users/a1234/.m2/repository/ch/qos/logback/logback-classic/1.5.34/logback-classic-1.5.34.jar:/Users/a1234/.m2/repository/ch/qos/logback/logback-core/1.5.34/logback-core-1.5.34.jar:/Users/a1234/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.4/log4j-to-slf4j-2.25.4.jar:/Users/a1234/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar:/Users/a1234/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.0/spring-boot-autoconfigure-4.1.0.jar:/Users/a1234/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/a1234/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.0/spring-boot-jdbc-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.0/spring-boot-sql-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.0/spring-boot-transaction-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.0/spring-boot-persistence-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-tx/7.0.8/spring-tx-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-jdbc/7.0.8/spring-jdbc-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-beans/7.0.8/spring-beans-7.0.8.jar:/Users/a1234/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/Users/a1234/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-web/4.1.0/spring-boot-starter-web-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.0/spring-boot-starter-jackson-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.0/spring-boot-jackson-4.1.0.jar:/Users/a1234/.m2/repository/tools/jackson/core/jackson-databind/3.1.4/jackson-databind-3.1.4.jar:/Users/a1234/.m2/repository/tools/jackson/core/jackson-core/3.1.4/jackson-core-3.1.4.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.0/spring-boot-starter-tomcat-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.0/spring-boot-starter-tomcat-runtime-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.0/spring-boot-web-server-4.1.0.jar:/Users/a1234/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.22/tomcat-embed-core-11.0.22.jar:/Users/a1234/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.22/tomcat-embed-el-11.0.22.jar:/Users/a1234/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.22/tomcat-embed-websocket-11.0.22.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.0/spring-boot-tomcat-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.0/spring-boot-http-converter-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-web/7.0.8/spring-web-7.0.8.jar:/Users/a1234/.m2/repository/io/micrometer/micrometer-observation/1.17.0/micrometer-observation-1.17.0.jar:/Users/a1234/.m2/repository/io/micrometer/micrometer-commons/1.17.0/micrometer-commons-1.17.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.0/spring-boot-webmvc-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.0/spring-boot-servlet-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-webmvc/7.0.8/spring-webmvc-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-aop/7.0.8/spring-aop-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-expression/7.0.8/spring-expression-7.0.8.jar:/Users/a1234/.m2/repository/com/h2database/h2/2.4.240/h2-2.4.240.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-h2console/4.1.0/spring-boot-h2console-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot/4.1.0/spring-boot-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-context/7.0.8/spring-context-7.0.8.jar:/Users/a1234/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.1.0/jakarta.servlet-api-6.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.1.0/spring-boot-starter-test-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-test/4.1.0/spring-boot-test-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.1.0/spring-boot-test-autoconfigure-4.1.0.jar:/Users/a1234/.m2/repository/com/jayway/jsonpath/json-path/2.10.0/json-path-2.10.0.jar:/Users/a1234/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/Users/a1234/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/a1234/.m2/repository/net/minidev/json-smart/2.6.0/json-smart-2.6.0.jar:/Users/a1234/.m2/repository/net/minidev/accessors-smart/2.6.0/accessors-smart-2.6.0.jar:/Users/a1234/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/a1234/.m2/repository/org/assertj/assertj-core/3.27.7/assertj-core-3.27.7.jar:/Users/a1234/.m2/repository/net/bytebuddy/byte-buddy/1.18.10/byte-buddy-1.18.10.jar:/Users/a1234/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/a1234/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.3/junit-jupiter-6.0.3.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.3/junit-jupiter-params-6.0.3.jar:/Users/a1234/.m2/repository/org/mockito/mockito-core/5.23.0/mockito-core-5.23.0.jar:/Users/a1234/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.10/byte-buddy-agent-1.18.10.jar:/Users/a1234/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/a1234/.m2/repository/org/mockito/mockito-junit-jupiter/5.23.0/mockito-junit-jupiter-5.23.0.jar:/Users/a1234/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/a1234/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/a1234/.m2/repository/org/springframework/spring-core/7.0.8/spring-core-7.0.8.jar:/Users/a1234/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/Users/a1234/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-test/7.0.8/spring-test-7.0.8.jar:/Users/a1234/.m2/repository/org/xmlunit/xmlunit-core/2.11.0/xmlunit-core-2.11.0.jar:/Users/a1234/.m2/repository/com/github/database-rider/rider-junit5/1.44.0/rider-junit5-1.44.0.jar:/Users/a1234/.m2/repository/com/github/database-rider/rider-core/1.44.0/rider-core-1.44.0.jar:/Users/a1234/.m2/repository/org/dbunit/dbunit/2.7.3/dbunit-2.7.3.jar:/Users/a1234/.m2/repository/org/postgresql/postgresql/42.7.11/postgresql-42.7.11.jar:/Users/a1234/.m2/repository/com/oracle/database/jdbc/ojdbc8/23.26.2.0.0/ojdbc8-23.26.2.0.0.jar:/Users/a1234/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.4/jackson-databind-2.21.4.jar:/Users/a1234/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/a1234/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.4/jackson-core-2.21.4.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/solve-classic-jvm/0.20.9/solve-classic-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/2.3.21/kotlin-stdlib-jdk8-2.3.21.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/2.3.21/kotlin-stdlib-2.3.21.jar:/Users/a1234/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/2.3.21/kotlin-stdlib-jdk7-2.3.21.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.7.0/kotlin-stdlib-common-1.7.0.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/solve-jvm/0.20.9/solve-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/2.3.21/kotlin-reflect-2.3.21.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/dsl-theory-jvm/0.20.9/dsl-theory-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/dsl-unify-jvm/0.20.9/dsl-unify-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/dsl-core-jvm/0.20.9/dsl-core-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/parser-theory-jvm/0.20.9/parser-theory-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/parser-jvm/0.20.9/parser-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/core-jvm/0.20.9/core-jvm-0.20.9.jar:/Users/a1234/.m2/repository/io/github/gciatto/kt-math-jvm/0.4.0/kt-math-jvm-0.4.0.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/utils-jvm/0.20.9/utils-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/unify-jvm/0.20.9/unify-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/theory-jvm/0.20.9/theory-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/parser-core-jvm/0.20.9/parser-core-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.3/junit-jupiter-api-6.0.3.jar:/Users/a1234/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/a1234/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/a1234/.m2/repository/org/junit/platform/junit-platform-commons/6.0.3/junit-platform-commons-6.0.3.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.3/junit-jupiter-engine-6.0.3.jar:/Users/a1234/.m2/repository/org/junit/platform/junit-platform-engine/6.0.3/junit-platform-engine-6.0.3.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="APPLICATION_NAME" value="exercicio-jdbc"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/a1234/Downloads/atividade-crud-musicas-jdbc/target/surefire/surefirebooter-20260825234717895_3.jar /Users/a1234/Downloads/atividade-crud-musicas-jdbc/target/surefire 2026-08-25T23-47-17_664-jvmRun1 surefire-20260825234717895_1tmp surefire_0-20260825234717895_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/a1234/Downloads/atividade-crud-musicas-jdbc/target/test-classes:/Users/a1234/Downloads/atividade-crud-musicas-jdbc/target/classes:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.0/spring-boot-starter-jdbc-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.0/spring-boot-starter-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.0/spring-boot-starter-logging-4.1.0.jar:/Users/a1234/.m2/repository/ch/qos/logback/logback-classic/1.5.34/logback-classic-1.5.34.jar:/Users/a1234/.m2/repository/ch/qos/logback/logback-core/1.5.34/logback-core-1.5.34.jar:/Users/a1234/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.4/log4j-to-slf4j-2.25.4.jar:/Users/a1234/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar:/Users/a1234/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.0/spring-boot-autoconfigure-4.1.0.jar:/Users/a1234/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/a1234/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.0/spring-boot-jdbc-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.0/spring-boot-sql-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.0/spring-boot-transaction-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.0/spring-boot-persistence-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-tx/7.0.8/spring-tx-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-jdbc/7.0.8/spring-jdbc-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-beans/7.0.8/spring-beans-7.0.8.jar:/Users/a1234/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/Users/a1234/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-web/4.1.0/spring-boot-starter-web-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.0/spring-boot-starter-jackson-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.0/spring-boot-jackson-4.1.0.jar:/Users/a1234/.m2/repository/tools/jackson/core/jackson-databind/3.1.4/jackson-databind-3.1.4.jar:/Users/a1234/.m2/repository/tools/jackson/core/jackson-core/3.1.4/jackson-core-3.1.4.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.0/spring-boot-starter-tomcat-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.0/spring-boot-starter-tomcat-runtime-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.0/spring-boot-web-server-4.1.0.jar:/Users/a1234/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.22/tomcat-embed-core-11.0.22.jar:/Users/a1234/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.22/tomcat-embed-el-11.0.22.jar:/Users/a1234/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.22/tomcat-embed-websocket-11.0.22.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.0/spring-boot-tomcat-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.0/spring-boot-http-converter-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-web/7.0.8/spring-web-7.0.8.jar:/Users/a1234/.m2/repository/io/micrometer/micrometer-observation/1.17.0/micrometer-observation-1.17.0.jar:/Users/a1234/.m2/repository/io/micrometer/micrometer-commons/1.17.0/micrometer-commons-1.17.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.0/spring-boot-webmvc-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.0/spring-boot-servlet-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-webmvc/7.0.8/spring-webmvc-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-aop/7.0.8/spring-aop-7.0.8.jar:/Users/a1234/.m2/repository/org/springframework/spring-expression/7.0.8/spring-expression-7.0.8.jar:/Users/a1234/.m2/repository/com/h2database/h2/2.4.240/h2-2.4.240.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-h2console/4.1.0/spring-boot-h2console-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot/4.1.0/spring-boot-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-context/7.0.8/spring-context-7.0.8.jar:/Users/a1234/.m2/repository/jakarta/servlet/jakarta.servlet-api/6.1.0/jakarta.servlet-api-6.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.1.0/spring-boot-starter-test-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-test/4.1.0/spring-boot-test-4.1.0.jar:/Users/a1234/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.1.0/spring-boot-test-autoconfigure-4.1.0.jar:/Users/a1234/.m2/repository/com/jayway/jsonpath/json-path/2.10.0/json-path-2.10.0.jar:/Users/a1234/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/Users/a1234/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/a1234/.m2/repository/net/minidev/json-smart/2.6.0/json-smart-2.6.0.jar:/Users/a1234/.m2/repository/net/minidev/accessors-smart/2.6.0/accessors-smart-2.6.0.jar:/Users/a1234/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/a1234/.m2/repository/org/assertj/assertj-core/3.27.7/assertj-core-3.27.7.jar:/Users/a1234/.m2/repository/net/bytebuddy/byte-buddy/1.18.10/byte-buddy-1.18.10.jar:/Users/a1234/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/a1234/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.3/junit-jupiter-6.0.3.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.3/junit-jupiter-params-6.0.3.jar:/Users/a1234/.m2/repository/org/mockito/mockito-core/5.23.0/mockito-core-5.23.0.jar:/Users/a1234/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.10/byte-buddy-agent-1.18.10.jar:/Users/a1234/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/a1234/.m2/repository/org/mockito/mockito-junit-jupiter/5.23.0/mockito-junit-jupiter-5.23.0.jar:/Users/a1234/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/a1234/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/a1234/.m2/repository/org/springframework/spring-core/7.0.8/spring-core-7.0.8.jar:/Users/a1234/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/Users/a1234/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/a1234/.m2/repository/org/springframework/spring-test/7.0.8/spring-test-7.0.8.jar:/Users/a1234/.m2/repository/org/xmlunit/xmlunit-core/2.11.0/xmlunit-core-2.11.0.jar:/Users/a1234/.m2/repository/com/github/database-rider/rider-junit5/1.44.0/rider-junit5-1.44.0.jar:/Users/a1234/.m2/repository/com/github/database-rider/rider-core/1.44.0/rider-core-1.44.0.jar:/Users/a1234/.m2/repository/org/dbunit/dbunit/2.7.3/dbunit-2.7.3.jar:/Users/a1234/.m2/repository/org/postgresql/postgresql/42.7.11/postgresql-42.7.11.jar:/Users/a1234/.m2/repository/com/oracle/database/jdbc/ojdbc8/23.26.2.0.0/ojdbc8-23.26.2.0.0.jar:/Users/a1234/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.4/jackson-databind-2.21.4.jar:/Users/a1234/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/a1234/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.4/jackson-core-2.21.4.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/solve-classic-jvm/0.20.9/solve-classic-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/2.3.21/kotlin-stdlib-jdk8-2.3.21.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/2.3.21/kotlin-stdlib-2.3.21.jar:/Users/a1234/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/2.3.21/kotlin-stdlib-jdk7-2.3.21.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.7.0/kotlin-stdlib-common-1.7.0.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/solve-jvm/0.20.9/solve-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/2.3.21/kotlin-reflect-2.3.21.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/dsl-theory-jvm/0.20.9/dsl-theory-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/dsl-unify-jvm/0.20.9/dsl-unify-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/dsl-core-jvm/0.20.9/dsl-core-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/parser-theory-jvm/0.20.9/parser-theory-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/parser-jvm/0.20.9/parser-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/core-jvm/0.20.9/core-jvm-0.20.9.jar:/Users/a1234/.m2/repository/io/github/gciatto/kt-math-jvm/0.4.0/kt-math-jvm-0.4.0.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/utils-jvm/0.20.9/utils-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/unify-jvm/0.20.9/unify-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/theory-jvm/0.20.9/theory-jvm-0.20.9.jar:/Users/a1234/.m2/repository/it/unibo/tuprolog/parser-core-jvm/0.20.9/parser-core-jvm-0.20.9.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.3/junit-jupiter-api-6.0.3.jar:/Users/a1234/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/a1234/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/a1234/.m2/repository/org/junit/platform/junit-platform-commons/6.0.3/junit-platform-commons-6.0.3.jar:/Users/a1234/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.3/junit-jupiter-engine-6.0.3.jar:/Users/a1234/.m2/repository/org/junit/platform/junit-platform-engine/6.0.3/junit-platform-engine-6.0.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/a1234"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/a1234/Downloads/atividade-crud-musicas-jdbc"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/a1234/Downloads/atividade-crud-musicas-jdbc/target/surefire/surefirebooter-20260825234717895_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1+8-LTS"/>
+    <property name="user.name" value="a1234"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.7.7"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.1+8"/>
+    <property name="localRepository" value="/Users/a1234/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/rl/2qmsw5pn55z9hdgrbhmssd7c0000gn/T/"/>
+    <property name="catalina.home" value="/private/var/folders/rl/2qmsw5pn55z9hdgrbhmssd7c0000gn/T/tomcat.0.5446667600012333569"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/a1234/Downloads/atividade-crud-musicas-jdbc"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="49646"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="catalina.base" value="/private/var/folders/rl/2qmsw5pn55z9hdgrbhmssd7c0000gn/T/tomcat.0.5446667600012333569"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/a1234/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.1+8-LTS"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[exercicio-jdbc] "/>
+  </properties>
+  <testcase name="shouldReturnMusicsFilteredByNameArtistAlbumAndDuration" classname="GET /musicas/search" time="3.677">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByNameArtistAlbumAndDuration(MusicaTest.java:407)
+]]></failure>
+    <system-out><![CDATA[23:47:21.047 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:47:21.388 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest
+23:47:21.578 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:47:21.583 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest
+23:47:21.662 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas]: SearchMusicas does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:47:21.673 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas
+23:47:21.675 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas]: SearchMusicas does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:47:21.676 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:47:21.680 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-08-25T23:47:23.263-03:00  INFO 49646 --- [exercicio-jdbc] [           main] s.s.e.MusicaTest$SearchMusicas           : Starting MusicaTest.SearchMusicas using Java 25.0.1 with PID 49646 (started by a1234 in /Users/a1234/Downloads/atividade-crud-musicas-jdbc)
+2026-08-25T23:47:23.267-03:00  INFO 49646 --- [exercicio-jdbc] [           main] s.s.e.MusicaTest$SearchMusicas           : No active profile set, falling back to 1 default profile: "default"
+2026-08-25T23:47:26.378-03:00  INFO 49646 --- [exercicio-jdbc] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-08-25T23:47:26.422-03:00  INFO 49646 --- [exercicio-jdbc] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-25T23:47:26.423-03:00  INFO 49646 --- [exercicio-jdbc] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-25T23:47:26.585-03:00  INFO 49646 --- [exercicio-jdbc] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3226 ms
+2026-08-25T23:47:26.893-03:00  INFO 49646 --- [exercicio-jdbc] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-25T23:47:27.899-03:00  INFO 49646 --- [exercicio-jdbc] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-08-25T23:47:27.902-03:00  INFO 49646 --- [exercicio-jdbc] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-25T23:47:28.477-03:00  INFO 49646 --- [exercicio-jdbc] [           main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2026-08-25T23:47:28.661-03:00  INFO 49646 --- [exercicio-jdbc] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 53061 (http) with context path '/'
+2026-08-25T23:47:28.671-03:00  INFO 49646 --- [exercicio-jdbc] [           main] s.s.e.MusicaTest$SearchMusicas           : Started MusicaTest.SearchMusicas in 6.897 seconds (process running for 10.542)
+2026-08-25T23:47:31.195-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:31.196-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:31.196-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:31.199-03:00  INFO 49646 --- [exercicio-jdbc] [           main] c.g.d.r.c.dataset.DataSetExecutorImpl    : DBUnit configuration for dataset executor 'junit5':cacheConnection: false
+cacheTableNames: true
+caseInsensitiveStrategy: UPPERCASE
+columnSensing: false
+leakHunter: false
+mergeDataSets: false
+mergingStrategy: METHOD
+disableSequenceFiltering: false
+alwaysCleanBefore: false
+alwaysCleanAfter: true
+raiseExceptionOnCleanUp: true
+disablePKCheckFor: com.github.database.rider.core.configuration.DBUnitConfig@2893c1bb
+schema: 
+tableType: [Ljava.lang.String;@5d04fbb7
+allowEmptyFields: false
+fetchSize: 100
+qualifiedTableNames: false
+prologTimeout: 1000
+batchSize: 100
+batchedStatements: false
+caseSensitiveTableNames: false
+replacers: [com.github.database.rider.core.replacers.DateTimeReplacer@da67c46, com.github.database.rider.core.replacers.UnixTimestampReplacer@5c7e55a4, com.github.database.rider.core.replacers.NullReplacer@7ae6927]
+
+2026-08-25T23:47:31.929-03:00  INFO 49646 --- [exercicio-jdbc] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-25T23:47:31.930-03:00  INFO 49646 --- [exercicio-jdbc] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-25T23:47:31.933-03:00  INFO 49646 --- [exercicio-jdbc] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-25T23:47:32.047-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/a1234/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.10/byte-buddy-agent-1.18.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="shouldReturnMusicsFilteredByNameOrArtist" classname="GET /musicas/search" time="0.208">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByNameOrArtist(MusicaTest.java:375)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.410-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.410-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.411-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.523-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnEmptyListWhenNoMusicsMatchFilters" classname="GET /musicas/search" time="0.065">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnEmptyListWhenNoMusicsMatchFilters(MusicaTest.java:361)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.617-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.617-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.618-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.649-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnMusicsFilteredByDuration" classname="GET /musicas/search" time="0.054">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByDuration(MusicaTest.java:346)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.686-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.687-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.687-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.710-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnMusicsFilteredByAlbumOrDuration" classname="GET /musicas/search" time="0.051">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByAlbumOrDuration(MusicaTest.java:423)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.742-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.743-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.743-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.761-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnMusicsFilteredByAlbum" classname="GET /musicas/search" time="0.064">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByAlbum(MusicaTest.java:331)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.797-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.797-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.797-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.828-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnMusicsFilteredByArtist" classname="GET /musicas/search" time="0.046">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByArtist(MusicaTest.java:316)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.866-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.866-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.866-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.886-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnMusicsFilteredByNameArtistAndAlbum" classname="GET /musicas/search" time="0.042">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByNameArtistAndAlbum(MusicaTest.java:390)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.915-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.915-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.915-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.929-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnMusicsFilteredByName" classname="GET /musicas/search" time="0.044">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;400 BAD_REQUEST&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <400 BAD_REQUEST>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$SearchMusicas.shouldReturnMusicsFilteredByName(MusicaTest.java:301)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:32.959-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.959-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.959-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:32.974-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "search"]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnMusicByIdCorrectly" classname="GET /musicas/{id}" time="0.212">
+    <system-out><![CDATA[2026-08-25T23:47:33.022-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$GetMusicaById]: GetMusicaById does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.029-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$GetMusicaById
+2026-08-25T23:47:33.032-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$GetMusicaById]: GetMusicaById does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.033-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.036-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$GetMusicaById
+2026-08-25T23:47:33.048-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.048-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.048-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn404WhenMusicDoesNotExist" classname="GET /musicas/{id}" time="0.055">
+    <system-out><![CDATA[2026-08-25T23:47:33.264-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.265-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.265-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn404WhenMusicDoesNotExist" classname="DELETE /musicas" time="0.043">
+    <failure message="expected: &lt;404 NOT_FOUND&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <404 NOT_FOUND> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$DeleteMusica.shouldReturn404WhenMusicDoesNotExist(MusicaTest.java:216)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.402-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.402-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.402-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.419-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn404WhenMusicDoesNotExist" classname="PUT /musicas" time="0.042">
+    <failure message="expected: &lt;404 NOT_FOUND&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <404 NOT_FOUND> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldReturn404WhenMusicDoesNotExist(MusicaTest.java:254)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.420-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.420-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.420-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.437-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldDeleteMusicCorrectly" classname="DELETE /musicas" time="0.048">
+    <failure message="expected: &lt;204 NO_CONTENT&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <204 NO_CONTENT> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$DeleteMusica.shouldDeleteMusicCorrectly(MusicaTest.java:205)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<44>but was:<45>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.324-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$DeleteMusica]: DeleteMusica does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.327-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$DeleteMusica
+2026-08-25T23:47:33.329-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$DeleteMusica]: DeleteMusica does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.330-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.332-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$DeleteMusica
+2026-08-25T23:47:33.346-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.346-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.346-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.369-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' is not supported]
+2026-08-25T23:47:33.379-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<44>but was:<45>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[1]" classname="POST /musicas" time="0.209">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;201 CREATED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <201 CREATED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.Optional.ifPresent(Optional.java:178)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+		at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+		at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Collections$2.tryAdvance(Collections.java:5182)
+		at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5190)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.441-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$PostMusica]: PostMusica does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.444-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$PostMusica
+2026-08-25T23:47:33.446-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$PostMusica]: PostMusica does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.447-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:33.449-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$PostMusica
+2026-08-25T23:47:33.525-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.525-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.525-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.717-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[2]" classname="POST /musicas" time="0.06">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;500 INTERNAL_SERVER_ERROR&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <500 INTERNAL_SERVER_ERROR>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.733-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.733-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.734-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.763-03:00 ERROR 49646 --- [exercicio-jdbc] [o-auto-1-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; NULL not allowed for column "NOME"; SQL statement:
+INSERT INTO musica (nome, artista, album, duracao) VALUES (?, ?, ?, ?) [23502-240]] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column "NOME"; SQL statement:
+INSERT INTO musica (nome, artista, album, duracao) VALUES (?, ?, ?, ?) [23502-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:406) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Table.convertInsertRow(Table.java:948) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:306) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:250) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$1(JdbcTemplate.java:998) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:997) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at school.sptech.exercicio_jdbc.MusicaController.cadastrar(MusicaController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[3]" classname="POST /musicas" time="0.035">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;201 CREATED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <201 CREATED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.Optional.ifPresent(Optional.java:178)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+		at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+		at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Collections$2.tryAdvance(Collections.java:5182)
+		at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5190)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.797-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.797-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.797-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.821-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[4]" classname="POST /musicas" time="0.087">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;500 INTERNAL_SERVER_ERROR&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <500 INTERNAL_SERVER_ERROR>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.836-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.836-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.836-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.872-03:00 ERROR 49646 --- [exercicio-jdbc] [o-auto-1-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; NULL not allowed for column "ARTISTA"; SQL statement:
+INSERT INTO musica (nome, artista, album, duracao) VALUES (?, ?, ?, ?) [23502-240]] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column "ARTISTA"; SQL statement:
+INSERT INTO musica (nome, artista, album, duracao) VALUES (?, ?, ?, ?) [23502-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:406) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Table.convertInsertRow(Table.java:948) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:306) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:250) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$1(JdbcTemplate.java:998) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:997) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at school.sptech.exercicio_jdbc.MusicaController.cadastrar(MusicaController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[5]" classname="POST /musicas" time="0.04">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;201 CREATED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <201 CREATED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.Optional.ifPresent(Optional.java:178)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+		at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+		at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Collections$2.tryAdvance(Collections.java:5182)
+		at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5190)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.928-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.929-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.929-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.954-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[6]" classname="POST /musicas" time="0.042">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;500 INTERNAL_SERVER_ERROR&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <500 INTERNAL_SERVER_ERROR>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:33.973-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.973-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.973-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:33.990-03:00 ERROR 49646 --- [exercicio-jdbc] [o-auto-1-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; NULL not allowed for column "ALBUM"; SQL statement:
+INSERT INTO musica (nome, artista, album, duracao) VALUES (?, ?, ?, ?) [23502-240]] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: NULL not allowed for column "ALBUM"; SQL statement:
+INSERT INTO musica (nome, artista, album, duracao) VALUES (?, ?, ?, ?) [23502-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:406) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.table.Table.convertInsertRow(Table.java:948) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:167) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.dml.Insert.update(Insert.java:135) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:212) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:306) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Command.executeUpdate(Command.java:250) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$1(JdbcTemplate.java:998) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:670) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:997) ~[spring-jdbc-7.0.8.jar:7.0.8]
+	at school.sptech.exercicio_jdbc.MusicaController.cadastrar(MusicaController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar:7.0.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar:7.0.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar:11.0.22]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[7]" classname="POST /musicas" time="0.04">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;201 CREATED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <201 CREATED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.Optional.ifPresent(Optional.java:178)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+		at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+		at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Collections$2.tryAdvance(Collections.java:5182)
+		at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5190)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.020-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.021-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.021-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.047-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePostMusica(String, String)[8]" classname="POST /musicas" time="0.035">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;201 CREATED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <201 CREATED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldValidatePostMusica(MusicaTest.java:188)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.Optional.ifPresent(Optional.java:178)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+		at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+		at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+		at java.base/java.util.Collections$2.tryAdvance(Collections.java:5182)
+		at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5190)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.066-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.067-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.067-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.090-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldCreateMusic" classname="POST /musicas" time="0.055">
+    <failure message="expected: &lt;{&quot;id&quot;:46,&quot;nome&quot;:&quot;Numb&quot;,&quot;artista&quot;:&quot;Linkin Park&quot;,&quot;album&quot;:&quot;Meteora&quot;,&quot;duracao&quot;:185}&gt; but was: &lt;{&quot;album&quot;:&quot;Meteora&quot;,&quot;artista&quot;:&quot;Linkin Park&quot;,&quot;duracao&quot;:185,&quot;id&quot;:54,&quot;nome&quot;:&quot;Numb&quot;}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <{"id":46,"nome":"Numb","artista":"Linkin Park","album":"Meteora","duracao":185}> but was: <{"album":"Meteora","artista":"Linkin Park","duracao":185,"id":54,"nome":"Numb"}>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldCreateMusic(MusicaTest.java:143)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<1>but was:<0>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.108-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.108-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.108-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.145-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<1>but was:<0>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn409WhenMusicAlreadyExistsIgnoringCase" classname="POST /musicas" time="0.056">
+    <failure message="expected: &lt;409 CONFLICT&gt; but was: &lt;201 CREATED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <409 CONFLICT> but was: <201 CREATED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldReturn409WhenMusicAlreadyExistsIgnoringCase(MusicaTest.java:173)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.173-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.174-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.174-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.211-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn409WhenMusicAlreadyExists" classname="POST /musicas" time="0.082">
+    <failure message="expected: &lt;409 CONFLICT&gt; but was: &lt;201 CREATED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <409 CONFLICT> but was: <201 CREATED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PostMusica.shouldReturn409WhenMusicAlreadyExists(MusicaTest.java:158)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.272-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.272-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.274-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.316-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<45>but was:<46>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturn409WhenUpdatingToDuplicateNameAndArtist" classname="PUT /musicas" time="0.045">
+    <failure message="expected: &lt;409 CONFLICT&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <409 CONFLICT> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldReturn409WhenUpdatingToDuplicateNameAndArtist(MusicaTest.java:268)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.341-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$PutMusica]: PutMusica does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:34.347-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$PutMusica
+2026-08-25T23:47:34.351-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$PutMusica]: PutMusica does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:34.352-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:34.357-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$PutMusica
+2026-08-25T23:47:34.372-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.372-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.372-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.392-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldUpdateMusicWhenItExists" classname="PUT /musicas" time="0.033">
+    <failure message="expected: &lt;200 OK&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <200 OK> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldUpdateMusicWhenItExists(MusicaTest.java:236)
+	Suppressed: org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<1>but was:<0>]
+		at org.dbunit.assertion.DefaultFailureHandler$DefaultFailureFactory.createFailure(DefaultFailureHandler.java:323)
+		at org.dbunit.assertion.DefaultFailureHandler.createFailure(DefaultFailureHandler.java:105)
+		at org.dbunit.assertion.DbUnitAssertBase.compareRowCounts(DbUnitAssertBase.java:171)
+		at org.dbunit.assertion.DbUnitAssertBase.assertWithValueComparer(DbUnitAssertBase.java:417)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:300)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:268)
+		at org.dbunit.assertion.DbUnitAssert.assertEquals(DbUnitAssert.java:227)
+		at org.dbunit.assertion.DbUnitAssert.assertEqualsIgnoreCols(DbUnitAssert.java:103)
+		at com.github.database.rider.core.assertion.DataSetAssertion.assertEqualsIgnoreCols(DataSetAssertion.java:17)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareClassic(DataSetExecutorImpl.java:880)
+		at com.github.database.rider.core.dataset.DataSetExecutorImpl.compareCurrentDataSetWith(DataSetExecutorImpl.java:838)
+		at com.github.database.rider.core.RiderRunner.performDataSetComparison(RiderRunner.java:144)
+		at com.github.database.rider.core.RiderRunner.runAfterTest(RiderRunner.java:63)
+		at com.github.database.rider.junit5.DBUnitExtension.afterTestExecution(DBUnitExtension.java:80)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.468-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.468-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.468-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.483-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2026-08-25T23:47:34.491-03:00 ERROR 49646 --- [exercicio-jdbc] [           main] org.dbunit.assertion.DbUnitAssertBase    : org.dbunit.assertion.DbComparisonFailure[row count (table=musica)expected:<1>but was:<0>]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[1]" classname="PUT /musicas" time="0.033">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.505-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.505-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.505-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.519-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[2]" classname="PUT /musicas" time="0.028">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.542-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.542-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.543-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.553-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[3]" classname="PUT /musicas" time="0.039">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.572-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.572-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.572-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.597-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[4]" classname="PUT /musicas" time="0.027">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.612-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.612-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.612-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.620-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[5]" classname="PUT /musicas" time="0.03">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.643-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.643-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.643-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.654-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[6]" classname="PUT /musicas" time="0.028">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.675-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.675-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.675-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.687-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[7]" classname="PUT /musicas" time="0.022">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.705-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.705-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.706-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.713-03:00  WARN 49646 --- [exercicio-jdbc] [o-auto-1-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldValidatePutMusica(String, String)[8]" classname="PUT /musicas" time="0.027">
+    <failure message="expected: &lt;400 BAD_REQUEST&gt; but was: &lt;405 METHOD_NOT_ALLOWED&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <400 BAD_REQUEST> but was: <405 METHOD_NOT_ALLOWED>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:158)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:139)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:201)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1188)
+	at school.sptech.exercicio_jdbc.MusicaTest$PutMusica.shouldValidatePutMusica(MusicaTest.java:284)
+]]></failure>
+    <system-out><![CDATA[2026-08-25T23:47:34.729-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.730-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.730-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.741-03:00  WARN 49646 --- [exercicio-jdbc] [-auto-1-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnEmptyListWhenDatabaseIsEmpty" classname="GET /musicas" time="0.022">
+    <system-out><![CDATA[2026-08-25T23:47:34.757-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$GetMusicas]: GetMusicas does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:34.759-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$GetMusicas
+2026-08-25T23:47:34.760-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest$GetMusicas]: GetMusicas does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:34.760-03:00  INFO 49646 --- [exercicio-jdbc] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [school.sptech.exercicio_jdbc.MusicaTest]: MusicaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-25T23:47:34.762-03:00  INFO 49646 --- [exercicio-jdbc] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration school.sptech.exercicio_jdbc.ExercicioJdbcApplication for test class school.sptech.exercicio_jdbc.MusicaTest$GetMusicas
+2026-08-25T23:47:34.769-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.770-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.770-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnListOfMusicsCorrectly" classname="GET /musicas" time="0.037">
+    <system-out><![CDATA[2026-08-25T23:47:34.794-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'schema' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.794-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'prologTimeout' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+2026-08-25T23:47:34.794-03:00  INFO 49646 --- [exercicio-jdbc] [           main] org.dbunit.database.DatabaseConfig       : The property ending with 'replacers' was not found. Please notify a dbunit developer to add the property to the class org.dbunit.database.DatabaseConfig
+]]></system-out>
+  </testcase>
+</testsuite>

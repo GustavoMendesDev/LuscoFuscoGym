@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS exercicios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    grupo VARCHAR(255) NOT NULL,
+    series INT NOT NULL,
+    repeticoes INT NOT NULL,
+    carga INT NOT NULL
+);

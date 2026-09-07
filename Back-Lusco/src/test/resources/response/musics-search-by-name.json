@@ -1,0 +1,13 @@
+[
+  { "id": 9,  "nome": "In Bloom", "artista": "Nirvana", "album": "Nevermind", "duracao": 254 },
+  { "id": 14, "nome": "Smooth Criminal", "artista": "Michael Jackson", "album": "Bad", "duracao": 257 },
+  { "id": 15, "nome": "Man in the Mirror", "artista": "Michael Jackson", "album": "Bad", "duracao": 301 },
+  { "id": 20, "nome": "Something", "artista": "The Beatles", "album": "Abbey Road", "duracao": 182 },
+  { "id": 22, "nome": "New Kid in Town", "artista": "Eagles", "album": "Hotel California", "duracao": 311 },
+  { "id": 25, "nome": "Lyin Eyes", "artista": "Eagles", "album": "One of These Nights", "duracao": 246 },
+  { "id": 31, "nome": "Like a Rolling Stone", "artista": "Bob Dylan", "album": "Highway 61 Revisited", "duracao": 373 },
+  { "id": 32, "nome": "Knockin on Heavens Door", "artista": "Bob Dylan", "album": "Pat Garrett & Billy the Kid", "duracao": 163 },
+  { "id": 33, "nome": "The Times They Are A-Changin", "artista": "Bob Dylan", "album": "The Times They Are A-Changin", "duracao": 178 },
+  { "id": 34, "nome": "Blowin in the Wind", "artista": "Bob Dylan", "album": "The Freewheelin Bob Dylan", "duracao": 166 },
+  { "id": 37, "nome": "Dont Look Back in Anger", "artista": "Oasis", "album": "(Whats the Story) Morning Glory?", "duracao": 290 }
+]

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AIDiffSettings">
+    <option name="showAIDiff" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f6dd1cc-c8e1-4c8e-8d8d-4c0eaf042277" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.2381594995119392" />
+      <entry key="MS500" value="1.755011508113066" />
+      <entry key="S2" value="2.3709009518992694" />
+      <entry key="S5" value="3.2872444463751167" />
+      <entry key="S10" value="3.950756371775489" />
+      <entry key="S30" value="4.998358622841647" />
+      <entry key="S60" value="7.400908642527698" />
+      <entry key="M2" value="12.940456853314025" />
+      <entry key="M5" value="26.93174033864637" />
+      <entry key="M10" value="41.366207337810586" />
+      <entry key="M15" value="49.40671661888289" />
+      <entry key="M30" value="60.21734352109271" />
+      <entry key="H1" value="67.0169842417634" />
+      <entry key="H2" value="70.84648005231259" />
+      <entry key="H4" value="72.88081596291374" />
+      <entry key="D1" value="74.6407393155864" />
+      <entry key="W1" value="74.94852626714558" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="2.684289735419328E-215" />
+      <entry key="MS500" value="1.2183326387040749E-43" />
+      <entry key="S2" value="1.880717286120746E-11" />
+      <entry key="S5" value="5.927314218162137E-5" />
+      <entry key="S10" value="0.011331864973525398" />
+      <entry key="S30" value="0.5283704001787806" />
+      <entry key="S60" value="1.6686039874653107" />
+      <entry key="M2" value="4.215871193974712" />
+      <entry key="M5" value="11.872184994226616" />
+      <entry key="M10" value="19.09406289564395" />
+      <entry key="M15" value="22.72915360422849" />
+      <entry key="M30" value="27.27573310209447" />
+      <entry key="H1" value="29.970895618768758" />
+      <entry key="H2" value="31.440912376272127" />
+      <entry key="H4" value="32.20895060782017" />
+      <entry key="D1" value="32.8665277680531" />
+      <entry key="W1" value="32.980892169830454" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.23820907546292874" />
+      <entry key="MS500" value="0.890275790346029" />
+      <entry key="S2" value="1.8974374842907866" />
+      <entry key="S5" value="3.003072590085805" />
+      <entry key="S10" value="3.7869322012154347" />
+      <entry key="S30" value="5.423935267542337" />
+      <entry key="S60" value="8.967140680673" />
+      <entry key="M2" value="17.047518393377516" />
+      <entry key="M5" value="38.696693336182385" />
+      <entry key="M10" value="60.376574592339416" />
+      <entry key="M15" value="72.06976322153655" />
+      <entry key="M30" value="87.45345750929387" />
+      <entry key="H1" value="96.96609255387217" />
+      <entry key="H2" value="102.27595442468109" />
+      <entry key="H4" value="105.08390466724438" />
+      <entry key="D1" value="107.50626964491113" />
+      <entry key="W1" value="107.929275436671" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3INe4pAiDRjcdwxL9sasNUdYM1X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MusicaTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHELLCHECK.PATH": "/Users/a1234/Library/Application Support/JetBrains/IntelliJIdea2026.2/plugins/Shell Script/shellcheck",
+    "Spring Boot.ExercicioJdbcApplication (1).executor": "Run",
+    "Spring Boot.ExercicioJdbcApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/a1234/LuscoFuscoGym/Back-Lusco",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "two.files.diff.last.used.file": "/Users/a1234/Downloads/exemplo-banco 3/src/main/java/school/sptech/exemplo_banco/UsuarioController.java"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.ExercicioJdbcApplication (1)">
+    <configuration name="MusicaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercicio-jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.sptech.exercicio_jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="school.sptech.exercicio_jdbc" />
+      <option name="MAIN_CLASS_NAME" value="school.sptech.exercicio_jdbc.MusicaTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="atividade-crud-musicas-jdbc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="atividade-crud-musicas-jdbc" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Spring Boot Maven" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="ExercicioJdbcApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="exercicio-jdbc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="school.sptech.exercicio_jdbc.ExercicioJdbcApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.sptech.exercicio_jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExercicioJdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="exercicio-jdbc (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="school.sptech.exercicio_jdbc.ExercicioJdbcApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="school.sptech.exercicio_jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MusicaTest" />
+      <item itemvalue="Maven.Spring Boot Maven" />
+      <item itemvalue="Spring Boot.ExercicioJdbcApplication (1)" />
+      <item itemvalue="Spring Boot.ExercicioJdbcApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ExercicioJdbcApplication (1)" />
+        <item itemvalue="Spring Boot.ExercicioJdbcApplication" />
+        <item itemvalue="JUnit.MusicaTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f6dd1cc-c8e1-4c8e-8d8d-4c0eaf042277" name="Changes" comment="" />
+      <created>1787609265340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787609265340</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
