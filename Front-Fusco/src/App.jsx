@@ -46,6 +46,7 @@ export default function App() {
       <section className="card" aria-labelledby="titulo">
         <header className="brand">
           <img className="sunrise-icon" src="/assets/icon/sunrise.png" alt="" />
+
           <span>LuscoFusco<span>Gym</span></span>
         </header>
 
@@ -69,7 +70,7 @@ export default function App() {
             ))}
           </div>
 
-          <button type="submit" disabled={salvando}>
+          <button id="salvando" className="submit" type="submit" disabled={salvando}>
             {salvando ? "Salvando..." : "Salvar exercício"}
           </button>
           {mensagem && <p className="message" role="status">{mensagem}</p>}
