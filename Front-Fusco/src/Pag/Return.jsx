@@ -1,5 +1,27 @@
 import { useEffect, useState } from "react";
-import { exerciciosApi } from "./services/exercicios";
+import { exerciciosApi } from "../services/exercicios";
+
+function formatarExercicios(dados) {
+  const lista = dados?.content ?? dados?.exercicios ?? dados;
+  const exercicios = Array.isArray(lista) ? lista : lista ? [lista] : [];
+
+  return exercicios
+    .map((exercicio) => {
+      const { nome, grupo, grupoMuscular, repeticoes, series, carga } = exercicio;
+
+      return [
+        `Exercício: ${nome}`,
+        `Grupo Muscular: ${grupo ?? grupoMuscular}`,
+        `Séries: ${series}`,
+        `Repetições: ${repeticoes}`,
+        `Carga: ${carga}`,
+      ]
+        .filter((linha) => !linha.endsWith("undefined") && !linha.endsWith("null"))
+        .join("\n");
+    })
+    .filter(Boolean)
+    .join("\n\n");
+}
 
 export default function Return() {
   const [resposta, setResposta] = useState("Buscando exercícios...");
@@ -10,14 +32,15 @@ export default function Return() {
 
     try {
       const respostaApi = await exerciciosApi.listar();
-      setResposta(JSON.stringify(respostaApi.data, null, 2));
+      const textoFormatado = formatarExercicios(respostaApi.data);
+      setResposta(textoFormatado || "Nenhum exercício cadastrado.");
     } catch (erro) {
       const detalhe =
         erro.response?.data?.message ??
         erro.response?.data ??
         erro.message ??
         "Erro desconhecido";
-      setResposta(`Não foi possível buscar os exercícios na API: ${detalhe}`);
+      setResposta(`Não foi possível buscar os exercícios! : ${detalhe}`);
     } finally {
       setBuscando(false);
     }
@@ -39,7 +62,7 @@ export default function Return() {
 
         <div className="response">
           <div className="response-header">
-            <label htmlFor="resposta-api">Resposta da API</label>
+            <label htmlFor="resposta-api">Exercicios Cadastrados: </label>
             <button type="button" onClick={buscarExercicios} disabled={buscando}>
               {buscando ? "Buscando..." : "Atualizar GET"}
             </button>

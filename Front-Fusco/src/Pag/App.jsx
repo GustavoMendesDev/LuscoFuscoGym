@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { exerciciosApi } from "./services/exercicios";
+import { exerciciosApi } from "../services/exercicios";
 
 const CAMPOS = [
   { nome: "nome", rotulo: "Nome do exercício", tipo: "text", placeholder: "Ex.: Supino reto" },
